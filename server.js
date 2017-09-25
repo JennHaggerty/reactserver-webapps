@@ -168,7 +168,7 @@ app.get('/logout', function(req, res){
   res.redirect('/');
 });
 
-app.get('/resume', (req, res) => res.redirect(301, '/'));
+//app.get('/resume', (req, res) => res.redirect(301, '/'));
 app.use(express.static('app'))
 
 // Web server invocation.. starts listening for connection requests here

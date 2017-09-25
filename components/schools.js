@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
-import config from './config';
+import config from '../config';
 
 export default class Schools extends Component {
   constructor(props) {
