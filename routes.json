@@ -1,0 +1,25 @@
+{
+  "middleware": [],
+  "routes": {
+    "Homepage": {
+      "path": "/",
+      "page": "pages/About.js"
+    },
+    "About": {
+      "path": "/about",
+      "page": "pages/About.js"
+    },
+    "Contact": {
+      "path": "/contact",
+      "page": "pages/Contact.js"
+    },
+    "Blog": {
+      "path": "/blog",
+      "page": "pages/Blog.js"
+    },
+    "Resume": {
+      "path": "/resume",
+      "page": "pages/Resume.js"
+    }
+  }
+}
