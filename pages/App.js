@@ -52,12 +52,9 @@ export default class App extends Component {
 
 
   getElements() {
-      return (
+      return [
         <div className="container">
           <Header />
-          <div className="content">
-            {this.props.children}
-          </div>
           <div id="loggedin">
             { !this.state.loggedIn
               ? null
@@ -65,6 +62,6 @@ export default class App extends Component {
             }
           </div>
         </div>
-      );
+      ];
   }
 }

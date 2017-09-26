@@ -1,17 +1,17 @@
 import React from 'react';
 import {Link, getCurrentRequestContext} from "react-server";
 
-import SvgClose from './assets/SvgClose';
-import SvgHambut from './assets/SvgHambut';
+//import SvgClose from './assets/SvgClose';
+//import SvgHambut from './assets/SvgHambut';
 
 //import './Header.less';
-
+const About = () => <Link path="/about">About</Link>
 const links = [
-	{
-		label: "About",
-		path: "/about",
-		internal: true,
-	},
+	//{
+	//	label: "About",
+	//	path: "/about",
+	//	internal: true,
+	//},
 	{
 		label: "Blog",
 		path: "/blog",
@@ -46,17 +46,6 @@ const HeaderLink = ({label, path, internal}) => {
 	}
 }
 
-class MenuControl extends React.Component {
-	render() {
-		let controlContent = (<span>Menu <SvgHambut /></span>)
-
-		if (this.props.open) {
-			controlContent = (<span>Close <SvgClose /></span>)
-		}
-
-		return controlContent;
-	}
-}
 
 
 export default class Header extends React.Component {
@@ -83,10 +72,6 @@ export default class Header extends React.Component {
 					<Link className="header-logo" path="/">
 						Jennifer Haggerty
 					</Link>
-
-					<div className="mobileToggle" onClick={this.toggleMenuOpen.bind(this)}>
-						<MenuControl open={this.state.menuOpen} />
-					</div>
 
 					<nav className="header-nav" ref="headerNav">
 						<ul>

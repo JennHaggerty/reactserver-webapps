@@ -8,6 +8,36 @@ import Contact from './contact';
 import Resume from './resume';
 import Login from './login';
 
+//const {Link} = require("react-server");
+//const About = () => <Link path="/about">About</Link>
+const links = [
+	{
+		label: "About",
+		path: "/about",
+		internal: true,
+	},
+	{
+		label: "Blog",
+		path: "/blog",
+		internal: true,
+  },
+  {
+		label: "Contact",
+		path: "/contact",
+		internal: true,
+  },
+  {
+		label: "Resume",
+		path: "/resume",
+		internal: true,
+	},
+	{
+		label: "GitHub",
+		path: "https://github.com/jennhaggerty",
+		internal: false,
+	},
+]
+
 export default class Navigation extends Component {
   constructor(props) {
     super(props);
@@ -47,13 +77,6 @@ export default class Navigation extends Component {
             <NavItem><Link to="/github" id="NavItem">Github</Link></NavItem>
           </Nav>
         </Navbar.Collapse>
-          <Route exact path="/" component={About}/>
-          <Route path="/about" component={About}/>
-          <Route path="/projects" render={contextualProjects}/>
-          <Route path="/contact" component={Contact}/>
-          <Route path="/resume" component={Resume}/>
-          <Route path="/login" component={Login}/>
-          <Route path='/github' component={() => window.location = 'https://github.com/jennhaggerty'}/>
         </Navbar>
       </Router>
     )

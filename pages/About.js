@@ -1,6 +1,7 @@
 
 import React from "react";
 import About from '../components/about';
+import Header from '../components/header';
 
 export default class AboutPage {
 	handleRoute(next) {
@@ -16,6 +17,11 @@ export default class AboutPage {
 		]
 	}
 	getElements() {
-		return <About />
+		return [
+			<div>
+			<div><Header /></div>
+			<div><About /></div>
+			</div>
+		];
 	}
 }

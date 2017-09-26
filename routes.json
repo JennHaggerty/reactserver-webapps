@@ -3,7 +3,7 @@
   "routes": {
     "Homepage": {
       "path": "/",
-      "page": "pages/App.js"
+      "page": "pages/about.js"
     },
     "About": {
       "path": "/about",
