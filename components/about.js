@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Navigation from "./navigation";
 //import { Router, Route, Link, browserHistory, IndexRoute  } from 'react-router'
 
 export default class About extends Component {
   render() {
     return (
       <div className="container">
-        <Navigation />
         <div id="introduction" className="jumbotron">
-        
+          
           <h2>Full stack engineer serving enterprise and startup solutions</h2>
           <p>Jennifer Haggerty provides technical advisement and solutions in four key competencies:</p>
           <div id="competencies">
@@ -45,7 +43,7 @@ export default class About extends Component {
           up front about project risk-factors, bottle-necks, and contingencies.</p>
           
           <p><b>Principal</b> – Jennifer has worked extensively with incubator and start-up companies to refine their vision and to prototype and 
-          implement applications for mobile, web, and desktop platforms. Schooling includes a Bachelor of Arts in Studio Art from the University of South Carolina. Rare days off are spent painting 
+          implement applications for mobile, web, and desktop platforms. Rare days off are spent painting 
           and studying photography, samples of which can be found <a href="https://bardicwarrior.com">here</a>.</p>
         </div>
       </div>

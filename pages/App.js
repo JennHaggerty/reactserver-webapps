@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 //import './App.css';
-import Navigation from '../components/navigation';
+import Header from '../components/header';
 import Logout from '../components/logout';
 import config from '../config';
 
@@ -54,16 +54,10 @@ export default class App extends Component {
   getElements() {
       return (
         <div className="container">
-          <header>
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"></link>
-          </header>
-          
-          <Navigation />
+          <Header />
           <div className="content">
             {this.props.children}
           </div>
-  
           <div id="loggedin">
             { !this.state.loggedIn
               ? null

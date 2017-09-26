@@ -110,7 +110,7 @@ export default class Projects extends Component {
         <div classname="container" id="projects">
           { editView 
             ? <div>
-              <div id="addProject" key="index" className="jumbotron">
+              <div id="addProject" key="index">
                 <form name="add" onSubmit={this.handleSubmit}>
                   <table>
                     <tbody>
@@ -218,7 +218,7 @@ export default class Projects extends Component {
 
             // non-editview. this implies not logged in also
             : <div>
-                <div id="latestProjects" className="jumbotron">
+                <div id="latestProjects">
                 <h2> Latest Entry</h2><br/>
                   {
                     this.state.projects.slice(0,1).map((project, index) => 

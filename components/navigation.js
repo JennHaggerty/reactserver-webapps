@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import {Navbar, Nav, NavItem} from '../node_modules/react-bootstrap';
+import { BrowserRouter as Router, Route, Link } from 'react-server';
+import {Navbar, Nav, NavItem} from '../node_modules/react-server';
 import './App.css';
 import About from './about';
 import Projects from './projects';
